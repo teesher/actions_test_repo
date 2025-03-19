@@ -10,12 +10,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Make Command Action
-        uses: teesher/actions_playground@main
+        uses: teesher/actions_playground/make_action@main
         with:
           command: 'print-hello'
 
       - name: Run Make Command Action Using Non-Standard Makefile
-        uses: teesher/actions_playground@main
+        uses: teesher/actions_playground/make_action@main
         with:
           command: 'print-hello'
           makefile: OtherMakefile
